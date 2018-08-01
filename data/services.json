@@ -14,5 +14,13 @@
             "host": "localhost",
             "port": 7890
         }
-    }
+    },
+    {
+        "name": "localhost",
+        "host": "localhost",
+        "target": {
+            "host": "localhost",
+            "port": 7000
+        }
+    }   
 ]
