@@ -7,7 +7,6 @@
 console.log('Starting to Poke');
 
 // Setup Dependencies
-const express = require('express');
 const http = require('http')
 const httpProxy = require('http-proxy');
 const fs = require('fs');
