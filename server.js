@@ -14,7 +14,7 @@ const fs = require('fs');
 // Load Services object
 var serviceTable = fs.readFileSync('data/services.json');
 
-// Setup main proxy
+// Setup main proxy object
 const proxy = {
     port: 80,
     host: "localhost",
