@@ -2,7 +2,8 @@
 A reverse Proxy for running multiple domains/services on a single outgoing IP/Server. 
 
 ### Disclaimer
-The current version is a very crude and basic version. It works but isn't elegant. Future versions will implement log files, Authentication and a more elaborate error handling system.
+The current version is a very crude and basic version. It works but isn't all that elegant. 
+Future versions will implement log files, Authentication, a load balancer and a more elaborate error handling system.
 
 ## Getting Started
 To get started with Poke you first have to add the desired target locations to the 'services.json' file in the 'data' directory.
