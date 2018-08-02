@@ -6,21 +6,5 @@
             "host": "localhost",
             "port": 8000
         }
-    },
-    {
-        "name": "RadioCoPilot API",
-        "host": "http://api.radiocopilot.nl",
-        "target": {
-            "host": "localhost",
-            "port": 7890
-        }
-    },
-    {
-        "name": "localhost",
-        "host": "localhost",
-        "target": {
-            "host": "localhost",
-            "port": 7000
-        }
-    }   
+    }
 ]
