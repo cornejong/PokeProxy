@@ -1,10 +1,10 @@
 [
     {
         "name": "serviceName",
-        "host": "http://mydomain.com",
+        "host": "localhost",
         "target": {
             "host": "localhost",
-            "port": 8000
+            "port": 7888
         }
     }
 ]
