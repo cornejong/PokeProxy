@@ -25,12 +25,12 @@ Currently 'name' is optional, but keeps it just a bit more readable and clear.
 To start Poke on the default port of 80 you have to start it with 'sudo' or atleast on OSX.
 
 ```console
-$ cd poke
-$ sudo node server
+cd poke
+sudo node server
 ```
 
 If you want to set another port for poke to listen to you can either edit the 'server.js' file or provide it via an environment variable.
 
 ```console
-$ sudo PORT=8080 node server
+sudo PORT=8080 node server
 ```
