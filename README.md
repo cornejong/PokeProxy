@@ -25,14 +25,14 @@ Currently 'name' is optional, but keeps it just a bit more readable and clear.
 To start Poke on the default port of 80 you have to start it with 'sudo' or atleast on OSX.
 
 ```console
-cd poke
-sudo node server
+$ cd poke
+$ sudo node server
 ```
 
 If you want to set another port for poke to listen to you can either edit the 'server.js' file or provide it via an environment variable.
 
 ```console
-sudo PORT=8080 node server
+$ sudo PORT=8080 node server
 ```
 
 ### The console logs
@@ -41,26 +41,26 @@ First we get the unix timestamp of the request. Followed by the request method.
 After that we find the request host wich points to the service target.
 And last we have the requested url path.
 ```console
-sudo node server
-> 1533230445 | Starting to Poke
-> 1533230445 | Ready to Catch them all! | on port 80
+$ sudo node server
+> Starting to Poke
+> Ready to Catch them all! | on port 80
 
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/css/ionicons.min.css
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/css/app.min.css
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/libs/jquery/dist/jquery.min.js
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/html/scripts/scrollto.js
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.rtl.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.dark.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.8.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.7.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.6.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.5.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/fonts/ionicons-v=3.0.0-alpha.3.woff2
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.4.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.3.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.2.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.1.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.png
-> 1533230480 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/css/ionicons.min.css.map
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/css/ionicons.min.css
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/css/app.min.css
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/libs/jquery/dist/jquery.min.js
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/html/scripts/scrollto.js
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.rtl.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.dark.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.8.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.7.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.6.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.5.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/fonts/ionicons-v=3.0.0-alpha.3.woff2
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.4.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.3.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.2.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.1.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/assets/images/layout.png
+> 1533230830 | GET | localhost => localhost:7888 |> /sc/libs/ionicons/dist/css/ionicons.min.css.map
 ```
