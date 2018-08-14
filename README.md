@@ -9,7 +9,7 @@ Future versions will implement log files, Authentication, a load balancer, more 
 Lets start by cloning this repo to a local folder
 
 ```console
-$ git clone https://github.com/cornejong/PokeProxy.git
+$ git clone https://github.com/cornejong/PokeProxy.git PokeProxy
 ```
 
 To get started with Poke you first have to add the desired target locations to the 'services.json' file in the 'data' directory.
