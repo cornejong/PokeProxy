@@ -3,16 +3,22 @@ A reverse Proxy for running multiple domains/services on a single outgoing IP/Se
 
 ### Disclaimer
 The current version is a very crude and basic version. It works but isn't all that elegant. 
-Future versions will implement log files, Authentication, a load balancer and a more elaborate error handling system.
+Future versions will implement log files, Authentication, a load balancer, more elaborate error handling system and hopefully a service manger.
 
 ## Getting Started
+Lets start by cloning this repo to a local folder
+
+```console
+$ git clone https://github.com/cornejong/PokeProxy.git
+```
+
 To get started with Poke you first have to add the desired target locations to the 'services.json' file in the 'data' directory.
 A service entry has a only two required key => value pairs: 'target' and 'host'. Checkout the example below.
 
 ```JSON
 {
     "name": "serviceName",
-    "host": "http://mydomain.com",
+    "host": "mydomain.com",
     "target": {
         "host": "localhost",
         "port": 8000
@@ -21,12 +27,13 @@ A service entry has a only two required key => value pairs: 'target' and 'host'.
 ```
 
 Currently 'name' is optional, but keeps it just a bit more readable and clear.
+In the future 'name' will be used for logging to the console as well as to the log files.
 
 ## Running Poke
 To start Poke on the default port of 80 you have to start it with 'sudo' or atleast on OSX.
 
 ```console
-$ cd poke
+$ cd PokeProxy
 $ sudo node server
 ```
 
